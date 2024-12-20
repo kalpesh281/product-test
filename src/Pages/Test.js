@@ -91,19 +91,21 @@ function Test() {
             </p>
           </div>
 
-          <div className="industry-grid">
-            {industries.map((industry, index) => (
-              <div
-                key={index}
-                onClick={() => setSelectedIndustry(industry.name)}
-                className="industry-card"
-              >
-                <h3 className="industry-title">{industry.name}</h3>
-                <p className="industry-description">{industry.description}</p>
-              </div>
-            ))}
+          <div className="industry-grid-container">
+            <div className="industry-grid">
+              {industries.map((industry, index) => (
+                <div
+                  key={index}
+                  onClick={() => setSelectedIndustry(industry.name)}
+                  className="industry-card"
+                >
+                  <h3 className="industry-title">{industry.name}</h3>
+                  <p className="industry-description">{industry.description}</p>
+                </div>
+              ))}
+            </div>
           </div>
-        </div>
+          </div>
       </section>
     </div>
   );

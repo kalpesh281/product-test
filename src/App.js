@@ -11,7 +11,7 @@ function App() {
     <>
     <Navbar/>
     <Test/>
-    <Footer/>
+    {/* <Footer/> */}
     </>
   );
 }
